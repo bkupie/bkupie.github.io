@@ -1,4 +1,8 @@
-# Midnight
+# Bart's Website
+
+For my website I used an open source theme called midnight , credit below, so if anyone wants to make a website using the same template, use the information provided below. 
+
+-------------------------------------------------------------------------------------------------
 
 Open source content for Midnight theme. Theme was first designed / developed for GitHub Pages and is available for download, forking and using anywhere else on the web.
 
