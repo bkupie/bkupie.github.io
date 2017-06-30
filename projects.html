@@ -6,8 +6,12 @@
     <title>Bartosz Kupiec</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+
+    <link rel="stylesheet" href="stylesheets/lightbox.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="javascripts/respond.js"></script>
+    <script src="javascripts/lightbox.js"></script>
+
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -15,6 +19,14 @@
     <link rel="stylesheet" href="stylesheets/ie.css">
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+
+
 
   </head>
   <body>
@@ -70,26 +82,86 @@
          Stella ( CS 342 )
        </h5>
        <iframe width="560" height="315" src="https://www.youtube.com/embed/_5q1sE5tSYg" frameborder="0" allowfullscreen></iframe>
-        <img src="images/stella1.png" width = "238" height "512"><img src="images/stella2.png"><img src="images/stella3.png"><img src="images/stella4.png"><img src="images/stella5.png">
 
-        <!-- Trigger the Modal -->
-        <img id="myImg" src="images/stella1.png" alt="Stella1" width="300" height="200">
 
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-
-          <!-- The Close Button -->
-          <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-
-          <!-- Modal Content (The Image) -->
-          <img class="modal-content" id="img01">
-
-          <!-- Modal Caption (Image Text) -->
-          <div id="caption"></div>
+      <div class="row">
+        <div class="column">
+          <img src="images/stella1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
         </div>
+        <div class="column">
+          <img src="images/stella2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="images/stella3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="images/stella4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
+      </div>
+
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+              <img src="images/stella1.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+              <img src="images/stella2.png" style="width:10%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+              <img src="images/stella3.png" style="width:10%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+              <img src="images/stella4.png" style="width:10%">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <div class="column">
+            <img class="demo" src="images/stella1.png" onclick="currentSlide(1)" alt=":D">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="images/stella2.png" wdith = "10%" onclick="currentSlide(2)" alt="Trolltunga">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="images/stella3.png" onclick="currentSlide(3)" alt="Mountains">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="images/stella4.png" onclick="currentSlide(4)" alt="Lights">
+          </div>
+        </div>
+      </div>
+
+    </section>
 
 
-      </section>
+
+
+
+
+
+
+
+
+
+
+
     </div>
     <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
   </body>
