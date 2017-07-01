@@ -549,7 +549,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #fff;
+  color: #fff !important;
 }
 
 p, ul, ol, table, pre, dl {
@@ -761,13 +761,14 @@ section #title {
   padding: 0 0 5px 0;
 }
 section #title h1 {
+  color:white;
   text-align: center;
   line-height: 1em;
   padding-bottom: 0;
   margin-bottom: 0;
 }
 section #title h5 {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.2);
   text-align: center;
   font-weight: 100;
   margin-top: 10px;
