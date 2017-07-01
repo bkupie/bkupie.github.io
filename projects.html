@@ -2,34 +2,24 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Bartosz Kupiec</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
 
-    <link rel="stylesheet" href="stylesheets/lightbox.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="stylesheets/zoom.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
     <script src="javascripts/respond.js"></script>
-    <script src="javascripts/lightbox.js"></script>
 
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
-
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
 
 
 
   </head>
   <body>
+
     <div id="header">
       <div class="wrapper">
         <a href="index.html" class="btn">Home</a>
@@ -85,84 +75,29 @@
 
 
       <div class="row">
-        <div class="column">
-          <img src="images/stella1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+
+        <div class="container">
+
+          <h3>Stella Images</h3>
+
+
+
+                  <img src="images/stella1.png" class="thumbnail">
+                  <img src="images/stella2.png" class="thumbnail">
+                  <img src="images/stella3.png" class="thumbnail">
+                  <img src="images/stella4.png" class="thumbnail">
+                  <img src="images/stella5.png" class="thumbnail">
+
         </div>
-        <div class="column">
-          <img src="images/stella2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+        <script src="//code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+        <script src="javascripts/view-image.js"></script>
+        <script src="javascripts/zoom.js"></script>
         </div>
-        <div class="column">
-          <img src="images/stella3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
-        </div>
-        <div class="column">
-          <img src="images/stella4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
-        </div>
-      </div>
-
-      <div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
-
-          <div class="mySlides">
-            <div class="numbertext">1 / 4</div>
-              <img src="images/stella1.png" style="width:100%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">2 / 4</div>
-              <img src="images/stella2.png" style="width:10%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">3 / 4</div>
-              <img src="images/stella3.png" style="width:10%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">4 / 4</div>
-              <img src="images/stella4.png" style="width:10%">
-          </div>
-
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-          <div class="caption-container">
-            <p id="caption"></p>
-          </div>
-
-          <div class="column">
-            <img class="demo" src="images/stella1.png" onclick="currentSlide(1)" alt=":D">
-          </div>
-
-          <div class="column">
-            <img class="demo" src="images/stella2.png" wdith = "10%" onclick="currentSlide(2)" alt="Trolltunga">
-          </div>
-
-          <div class="column">
-            <img class="demo" src="images/stella3.png" onclick="currentSlide(3)" alt="Mountains">
-          </div>
-
-          <div class="column">
-            <img class="demo" src="images/stella4.png" onclick="currentSlide(4)" alt="Lights">
-          </div>
-        </div>
-      </div>
 
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
+  </div>
     <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
   </body>
 </html>

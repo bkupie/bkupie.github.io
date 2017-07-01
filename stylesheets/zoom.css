@@ -1,0 +1,9 @@
+h3{
+  font-size: 24px !important;
+  color: #92c755 !important;
+}
+
+img { border:3px solid #92c755;
+     border-radius:3px;
+     overflow:auto;}
+img.thumbnail {border:3px solid #92c755 !important; display: inline;height:auto; width:100px; }
