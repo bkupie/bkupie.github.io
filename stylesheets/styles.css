@@ -605,11 +605,12 @@ a:hover {
 .btn {
   font-size: 14px;
   color: #fff;
+  margin-top: 3px;
   background-color: #8bc34a;
   border: 1px solid #92c755;
   border-radius: 2px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  padding: 6px 12px;
+  padding: 6px 12px !important;
   display: inline-block;
   text-align: center;
   transition: all 150ms ease;
@@ -619,6 +620,12 @@ a:hover {
   border: 1px solid #84bf3f;
   background-color: #7eb73d;
   box-shadow: 0;
+}
+
+.collapse {
+  outline: 2px dashed gray;
+  outline-offset: 4px;
+  margin-top: 15px;"
 }
 
 ul {
