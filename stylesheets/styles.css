@@ -622,6 +622,12 @@ a:hover {
   box-shadow: 0;
 }
 
+.collapse {
+  outline: 2px dashed gray;
+  outline-offset: 4px;
+  margin-top: 15px;"
+}
+
 ul {
   list-style-image: url("../images/bullet.png");
 }
