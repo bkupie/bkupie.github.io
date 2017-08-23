@@ -9,10 +9,8 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
 
-    <script src="javascripts/respond.js"></script>
-    <script src="javascripts/easteregg.js"></script>
 
-<!-- bootstrap -->
+    <!-- bootstrap -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -22,7 +20,9 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-
+    <!-- Custom sprits, need jQuery, so loaded after bootstrap -->
+    <script src="javascripts/respond.js"></script>
+    <script src="javascripts/easteregg.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
@@ -41,9 +41,9 @@
         <div id="title">
           <h1 style="color: #92c755 !important">Bartosz Kupiec</h1>
           <h5>Wanna be computer guy :-)</h5>
-              <center><img src="images/me-circle.png" class = "img-circle" id = "main-picture" width="200" height="200" align="middle" onclick = "changeImage()"></center>
-
-
+              <center id = "easter-egg">
+                <img src="images/me-circle.png" class = "img-circle" id = "main-picture" width="200" height="200" align="middle">
+              </center>
           <hr>
 
         </div>
