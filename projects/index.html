@@ -86,7 +86,7 @@
         SENSEI Project
       </h3>
       <center><img src="https://www.evl.uic.edu/resizedImages/1280x720-sensei-whole_pi_geode.jpg" width="60%" height="60%" align="middle"></center>
-      <a class = "btn"  style = "width:100%;" href="#sensei" data-toggle="collapse">More info</a>
+      <a class = "btn"  style = "width:100%;" href="#sensei" data-toggle="collapse" aria-expanded = "false" >More info</a>
 
      <div id="sensei" class="collapse">
        <p>Helped working on the <a href="https://www.evl.uic.edu/entry.php?id=1191">SENSEI Project</a> ( also more info <a href="https://www.evl.uic.edu/entry.php?id=2229">here </a> as well), where
@@ -204,6 +204,12 @@
         <script src="//code.jquery.com/jquery-3.1.1.slim.min.js"></script>
         <script src="../javascripts/view-image.js"></script>
         <script src="../javascripts/zoom.js"></script>
+        <script>
+          // TODO: make script that changes text when button is pressed
+          $("#btn").click(function(){
+            console.log("Testing change");
+            });
+        </script>
         </div>
 
     </section>
